@@ -1,0 +1,162 @@
+/* CSS초기화 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 내가 원하는 설정들 설정하기 */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+/* 이 밑부터 진짜 CSS시작    */
+/* 캐로셀에 관한 css */
+#carousel {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 70%;
+    height: 40rem;
+    background-size: cover
+}
+
+.carousel-img-size {
+    height: 40rem;
+}
+
+
+/* 검색에 관한 css */
+#search-form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+#search-form select {
+    border-radius: 0.5em;
+}
+
+#search-keyword {
+    width: 35%;
+    margin: 0 0.5em;
+    margin-right: 0.8em;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+#btnSearch {
+    background-color: transparent;
+    border: none
+}
+
+
+/* 메인 바디 CSS */
+.main-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* 훈련과정 */
+.card-container {
+    margin: 1.5rem;
+}
+
+/* 간략 자유게시판 취업게시판*/
+.forum-container {
+    margin: 6.5rem 0 0 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+/* 자유게시판 */
+#general-forum-container {
+    width: 45%;
+    overflow: hidden;
+}
+
+#forum-text {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: 0.5px solid lightgray;
+    
+}
+
+.general-forum-posts {
+    overflow: hidden;
+    list-style-type: circle;
+}
+
+.general-forum-posts a {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 취업 후기 게시판 */
+#job-testimony-container {
+    width: 45%;
+    overflow: hidden;
+}
+
+.job-testimony-posts {
+    overflow: hidden;
+    list-style-type: circle;
+}
+
+.job-testimony-posts a {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
